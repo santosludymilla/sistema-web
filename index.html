@@ -8,17 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <section class="topo">
-        <a href="index.html"><img src="logo.png" alt=""></a>
-        <ul>
-            <a href="index.html"><li>Página inicial</li></a>
+        <a href="index.html"><img src="logo.png" alt="" /></a>
+        <nav class="menu-lateral">
+          <ion-icon
+                class="botao-menu-close"
+                name="close-outline"
+                onclick="toggleMenu()"></ion-icon>
+          <ul>
+              <a href="index.html"><li>Página inicial</li></a>
             <a href="#produtos"><li>Produtos</li></a>
             <a href="#beneficios"><li>Benefícios</li></a>
             <a href="#sobre-nos"><li>Sobre nós</li></a>
             <a class="botao-primario" href="">faça seu pedido agora!</a>
-        </ul>
-    </section>
-
+          </ul>
+        </nav>
+        <ion-icon
+          class="botao-menu"
+          name="menu-outline"
+          onclick="toggleMenu()"
+        ></ion-icon>
+      </section>
     <section class="header">
         <section class="esquerda">
         <h1>Açaiteria premium!</h1>
@@ -137,5 +148,6 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
